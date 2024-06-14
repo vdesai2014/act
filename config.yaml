@@ -1,0 +1,34 @@
+# config.yaml
+is_ddp: False 
+ckpt_dir: "./chkpt"
+ckpt_name: "policy_epoch_3000_seed_1.ckpt"
+task_name: "task_example"
+state_dim: 4
+batch_size_train: 16
+num_epochs: 10000
+lr: 0.00002
+kl_weight: 10
+hidden_dim: 512
+dim_feedforward: 3200
+seed: 1
+num_episodes: 44
+camera_names: ['first', 'second']
+lr_backbone: 0.00005
+backbone: 'resnet18'
+dataset_dir: 'data/block_move_10hz/'
+weight_decay: 0.0001
+lr_drop: 200
+clip_max_norm: 0.1
+dilation: False
+position_embedding: "sine"
+enc_layers: 4
+dec_layers: 7
+dropout: 0.1
+nheads: 8
+num_queries: 10
+pre_norm: True
+masks: False
+wandb:
+  api_key: "1bafb483fc18be5411bc07ae3693994f943313c7"
+  project_name: "act_tests"
+  experiment_name: "7india"
